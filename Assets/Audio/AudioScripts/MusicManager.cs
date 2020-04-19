@@ -8,9 +8,9 @@ public class MusicManager : MonoBehaviour {
 	public static MusicManager instance;
 
     public AudioSource[] musicSource;
-    public AudioClip forestMusic, exploreStem, combatStem, winMusic, deathStinger;
+    public AudioClip insideMusic, outsideMusic, winMusic;
 
-    public AudioMixerGroup track01, track02_stem01, track02_stem02, stingerTrack;
+    public AudioMixerGroup track01, track02_stem01;
 
     public float fadeInTime = 1.0f;
     public float fadeOutTime = 1.0f;
@@ -34,7 +34,7 @@ public class MusicManager : MonoBehaviour {
     // Use this for initialization
 	void Start ()
 	{
-        musicSource = new AudioSource[4];
+        musicSource = new AudioSource[2];
 
         musicSource[0] = gameObject.AddComponent<AudioSource>();
         musicSource[0].outputAudioMixerGroup = track01;
@@ -42,13 +42,7 @@ public class MusicManager : MonoBehaviour {
         musicSource[1] = gameObject.AddComponent<AudioSource>();
         musicSource[1].outputAudioMixerGroup = track02_stem01;
 
-        musicSource[2] = gameObject.AddComponent<AudioSource>();
-        musicSource[2].outputAudioMixerGroup = track02_stem02;
-
-        musicSource[3] = gameObject.AddComponent<AudioSource>();
-        musicSource[3].outputAudioMixerGroup = stingerTrack;
-
-        StartCoroutine(FadeIn(musicSource[0], forestMusic, 1f));
+        StartCoroutine(FadeIn(musicSource[0], insideMusic, 1f));
 
     }
 	

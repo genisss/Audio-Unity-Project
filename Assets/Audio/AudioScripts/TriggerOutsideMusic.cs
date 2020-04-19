@@ -15,12 +15,12 @@ public class TriggerOutsideMusic : MonoBehaviour
             {
 
                 mm.StartCoroutine(mm.FadeOut(mm.musicSource[0]));
-                mm.StartCoroutine(mm.FadeIn(mm.musicSource[1], mm.exploreStem, 0f));
+                mm.StartCoroutine(mm.FadeIn(mm.musicSource[1], mm.outsideMusic, 0f));
             }
             else
             {
                 mm.StartCoroutine(mm.FadeOut(mm.musicSource[1]));
-                mm.StartCoroutine(mm.FadeIn(mm.musicSource[0], mm.forestMusic, 0f));
+                mm.StartCoroutine(mm.FadeIn(mm.musicSource[0], mm.insideMusic, 0f));
             }
             toggle = !toggle;
         }

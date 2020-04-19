@@ -91,7 +91,6 @@ public class GameManager : MonoBehaviour {
 
                 MusicManager mm = MusicManager.instance;
                 mm.StartCoroutine(mm.FadeOut(mm.musicSource[1]));
-                mm.StartCoroutine(mm.FadeOut(mm.musicSource[2]));
 
                 mm.StartCoroutine(mm.FadeIn(mm.musicSource[0], mm.winMusic, 0.7f, false));
 
