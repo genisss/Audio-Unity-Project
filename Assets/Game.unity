@@ -570,17 +570,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicSource: []
-  forestMusic: {fileID: 8300000, guid: d7bd7483af4efea42ad1745dc7329b00, type: 3}
-  exploreStem: {fileID: 8300000, guid: a5d02aa7f856a4048aad35bec103c165, type: 3}
-  combatStem: {fileID: 0}
+  insideMusic: {fileID: 8300000, guid: d7bd7483af4efea42ad1745dc7329b00, type: 3}
+  outsideMusic: {fileID: 8300000, guid: a5d02aa7f856a4048aad35bec103c165, type: 3}
   winMusic: {fileID: 8300000, guid: 7090bedbe4e6dce46b5b02436f2d0e4a, type: 3}
-  deathStinger: {fileID: 0}
   track01: {fileID: 7858486874486570896, guid: d3d06b5a9a5382546ac58c756f1b9661, type: 2}
   track02_stem01: {fileID: 7858486874486570896, guid: d3d06b5a9a5382546ac58c756f1b9661,
-    type: 2}
-  track02_stem02: {fileID: -1020673986848277586, guid: 8ad2fd0908ff3db429694f2ba10b01e0,
-    type: 2}
-  stingerTrack: {fileID: -3482990919601198535, guid: 8ad2fd0908ff3db429694f2ba10b01e0,
     type: 2}
   fadeInTime: 2
   fadeOutTime: 2
